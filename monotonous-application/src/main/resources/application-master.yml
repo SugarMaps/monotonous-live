@@ -1,0 +1,45 @@
+#dubbo:
+#  application:
+#    name: yt-staff
+#    owner: fangchen
+#  protocol:
+#    name: dubbo
+#    port: 28887
+#    threads: 100
+#  registry:
+#    protocol: zookeeper
+##    address: zookeeper://test-zk.yangtuojia.com:2184?backup=test-zk.yangtuojia.com:2185,test-zk.yangtuojia.com:2186
+#    address: zookeeper://zk1.yangtuojia.com:2181?backup=zk2.yangtuojia.com:2181,zk3.yangtuojia.com:2181
+#    timeout: 20000
+#  provider:
+#    retries: 0
+#    delay: -1
+#    export: true
+#    timeout: 5000
+#    group: master
+#    executes: 100
+#  consumer:
+#    retries: 0
+#    check: false
+#    timeout: 10000
+#    group: master
+#  scan:
+#    base-packages: com.yangt.staff
+#
+#log:
+#  location: /alidata/log/${spring.application.name}
+
+spring:
+  # MySQL DataSource
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: yangtuojia001
+    password: yangtuojia001
+    url: jdbc:mysql://rdsxt5l78bid42x9ddylc832.mysql.rds.aliyuncs.com:3306/yt_staff?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&serverTimezone=Hongkong
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 30000
+      maximum-pool-size: 50
+      minimum-idle: 10
+
+
