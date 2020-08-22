@@ -17,6 +17,7 @@
         <module>monotonous-api</module>
         <module>monotonous-common</module>
         <module>monotonous-facade</module>
+        <module>monotonous-model</module>
         <module>monotonous-repository</module>
         <module>monotonous-service</module>
         <module>monotonous-application</module>

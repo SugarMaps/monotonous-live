@@ -6,10 +6,7 @@
         <artifactId>live-parent</artifactId>
         <version>1.0.0</version>
     </parent>
-    <artifactId>monotonous-service</artifactId>
+    <artifactId>monotonous-model</artifactId>
     <version>1.0</version>
 
-    <dependencies>
-        
-    </dependencies>
 </project>
