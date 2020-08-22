@@ -9,4 +9,12 @@
     <artifactId>monotonous-service</artifactId>
     <version>1.0</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.monotonous</groupId>
+            <artifactId>monotonous-repository</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
 </project>
