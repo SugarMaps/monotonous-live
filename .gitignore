@@ -1,0 +1,13 @@
+*.class
+*.iml
+*.log
+*.lock
+*.zip
+
+.DS_Store
+.classpath
+
+.idea
+target
+bin
+out

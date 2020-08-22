@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: monotonous
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: master
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
+      date: dd/MM/yyyy
+      time: HH:mm:ss
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.monotonous.mapper
+  configuration.map-underscore-to-camel-case: true
+
+

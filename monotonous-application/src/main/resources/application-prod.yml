@@ -1,0 +1,34 @@
+dubbo:
+  application:
+    name: yt-staff
+    owner: fangchen
+  protocol:
+    name: dubbo
+    port: 28887
+    threads: 100
+  registry:
+    protocol: zookeeper
+    address: zookeeper://zk1.yangtuojia.com:2181?backup=zk2.yangtuojia.com:2181,zk3.yangtuojia.com:2181
+    timeout: 20000
+  provider:
+    retries: 0
+    delay: -1
+    export: true
+    timeout: 5000
+    group: prod
+    executes: 100
+  consumer:
+    retries: 0
+    check: false
+    timeout: 10000
+    group: prod
+  scan:
+    base-packages: com.yangt.staff
+
+
+log:
+  location: /alidata/log/${spring.application.name}
+
+spring:
+  profiles:
+    active: prod
